@@ -34,17 +34,17 @@
 
             <TextView
                 android:id="@+id/HomeUsername"
-                android:layout_width="245dp"
+                android:layout_width="211dp"
                 android:layout_height="match_parent"
-                android:text="Name"
                 android:fontFamily="@font/posttext"
+                android:text="Name"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/PostTime"
-                android:layout_width="85dp"
+                android:layout_width="121dp"
                 android:layout_height="50dp"
                 android:fontFamily="@font/posttext"
                 android:text="33 min" />
@@ -54,7 +54,7 @@
         <TextView
             android:id="@+id/userPost"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="84dp"
             android:fontFamily="@font/posttext"
             android:padding="5dp"
             android:text="Description"
@@ -65,17 +65,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#F5F0F0" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
             android:orientation="horizontal"/>
 
 

@@ -58,10 +58,10 @@ public class SignUp extends AppCompatActivity {
             public void onClick(View view) {
                 textViewError.setVisibility(View.GONE);
                 progressBar.setVisibility(View.VISIBLE);
-                fullname = String.valueOf(TextInputEditTextFullname.getText());
-                email = String.valueOf(TextInputEditTextEmail.getText());
-                username = String.valueOf(TextInputEditTextUsername.getText());
-                password = String.valueOf(TextInputEditTextPassword.getText());
+                fullname = String.valueOf(TextInputEditTextFullname.getText()).trim();
+                email = String.valueOf(TextInputEditTextEmail.getText()).trim();
+                username = String.valueOf(TextInputEditTextUsername.getText()).trim();
+                password = String.valueOf(TextInputEditTextPassword.getText()).trim();
 
                 RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
                 String url ="https://lamp.ms.wits.ac.za/home/s2494554/register.php";

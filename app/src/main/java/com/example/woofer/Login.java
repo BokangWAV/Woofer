@@ -79,8 +79,8 @@ public class Login extends AppCompatActivity {
             public void onClick(View view) {
                 textViewError.setVisibility(View.GONE);
                 progressBar.setVisibility(View.VISIBLE);
-                email = String.valueOf(TextInputEditTextLoginEmail.getText());
-                password = String.valueOf(TextInputEditTextPassword.getText());
+                email = String.valueOf(TextInputEditTextLoginEmail.getText()).trim();
+                password = String.valueOf(TextInputEditTextPassword.getText()).trim();
 
                 RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
                 String url ="https://lamp.ms.wits.ac.za/home/s2494554/login.php";
@@ -109,7 +109,7 @@ public class Login extends AppCompatActivity {
                                         editor.putString("apikey",apikey);
                                         editor.apply();
                                         Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                        Intent intent = new Intent(getApplicationContext(), SplashScreenActivity.class);
                                         startActivity(intent);
                                         finish();
                                     } else{
